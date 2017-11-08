@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>Welcome.html</welcome-file>
+    <welcome-file>Home.html</welcome-file>
+   </welcome-file-list>
+   <servlet>
+   	<servlet-name>RagistrationForm</servlet-name>
+   	<servlet-class>com.servlet.bridgeit.program.Servlet1</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>RagistrationForm</servlet-name>
+   	<url-pattern>/ragistrationForm</url-pattern>
+   </servlet-mapping>
+   <servlet>
+   		<servlet-name>HomePage</servlet-name>
+   		<servlet-class>com.servlet.bridgeit.program.Servlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   		<servlet-name>HomePage</servlet-name>
+   		<url-pattern>/servlet2</url-pattern>
+   </servlet-mapping>
+</web-app>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>CrudeOperation</display-name>
+  <welcome-file-list>
+    <welcome-file>Welcome.html</welcome-file>
+    <welcome-file>display.html</welcome-file>
+    <welcome-file>delete.html</welcome-file>
+    <welcome-file>update.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  			<servlet-name>insert</servlet-name>
+  			<servlet-class>com.bridge.crude.program.InsertData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  			<servlet-name>insert</servlet-name>
+  			<url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  			<servlet-name>display</servlet-name>
+  			<servlet-class>com.bridge.crude.program.servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  			<servlet-name>display</servlet-name>
+  			<url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>delete</servlet-name>
+  			<servlet-class>com.bridge.crude.program.Servlet3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  			<servlet-name>delete</servlet-name>
+  			<url-pattern>/Servlet3</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+  			<servlet-name>update</servlet-name>
+  			<servlet-class>com.bridge.crude.program.Servlet4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  			<servlet-name>update</servlet-name>
+  			<url-pattern>/Servlet4</url-pattern>
+  </servlet-mapping>
+</web-app>

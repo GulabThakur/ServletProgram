@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+    <script type="text/javascript">
+        function validate_form() {
+            if (document.fast.value == "") {
+                alert("Please fill in the 'Your Employee Name' box.");
+                return false;
+            }
+            if (document.last.value == "") {
+                alert("Enter Employee Number");
+                return false;
+            }
+            alert("sucessfully Submitted");
+ 
+ 
+ 
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.userid.value)) {
+                alert("You have entered an invalid email address!")
+                return (false)
+            }
+        }
+ 
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 &&
+                (charCode < 48 || charCode > 57)) {
+                alert("Enter Number");
+                return false;
+            }
+            return true;
+        }
+ 
+ 
+        //-->
+    </script>
+</head>
+<body bgcolor="#C0C0C0">
+
+			<div  align="center" style="color: purple;">
+			<h2>Registration Form</h2>
+			<form action ="ragistrationForm" method="get" onsubmit="return  validate_form();">
+			<table ><tr><td>
+			First-Name :</td><td><input  type ="text" name ="fast" ></td></tr>
+			<tr><td>
+			Last-Name :</td><td><input type ="text" name ="last"></td></tr>
+			<tr><td>
+			Birth-of-Date:</td><td><input type ="date" name= "date"></td></tr>
+			<tr><td>
+			Gender :</td><td>
+		       <input type="radio">  
+               <input type="radio"></td></tr>  
+            </select>  <br>
+            <tr><td>
+			Contact :</td><td><input type="number" name ="cont"></td></tr>
+			<tr><td>
+			User-id:</td><td><input type="Email" name="userid"></td></tr>
+			<tr><td>
+			Password:</td><td><input type="password" name="psd"></td></tr>
+			<tr><td>
+			Re-password:</td><td><input type ="password"name ="pasd2"></td></tr>
+			</table>
+			<input type="submit" value="submit">
+			</form>
+			</div>
+			<script>
+			</script>
+</body>
+</html>
