@@ -17,12 +17,8 @@ public class Mailer {
 	{
 		//System.out.println(to);
 		final String user="gulabthakur238@gmail.com";
-		final String pass="7024082813";
-		
+		final String pass="************";
 		Properties properties=new Properties();
-		
-	
-		
 		properties.put("mail.smtp.auth", "true");
 		properties.put("mail.smtp.starttls.enable", "true");
 		properties.put("mail.smtp.host", "smtp.gmail.com");    
@@ -36,9 +32,6 @@ public class Mailer {
 				
 			}
 		});
-		
-		//
-		
 		try {
 			MimeMessage mimeMessage=new MimeMessage(session);
 			mimeMessage.setFrom(new InternetAddress(user));
